@@ -5,12 +5,13 @@ body {
 
 #header {
 	width: 800px;
-	height: 72px;
-	line-height: 72px;
-	padding: auto;
+	height: 60px;
+	line-height: 60px;
+	margin: auto;
 	background-color: #5a30d9;
 	color: #ffffff;
 	font-family: Helvetica, sans-serif;
+	display: inline-block;
 }
 
 .header-button {
