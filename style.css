@@ -1,5 +1,28 @@
-#text {
+
+body {
+	background-color: #cccccc;
+}
+
+#header {
+	width: 800px;
+	height: 72px;
+	line-height: 72px;
+	padding: auto;
+	background-color: #5a30d9;
+	color: #ffffff;
+	font-family: Helvetica, sans-serif;
+}
+
+.header-button {
+	padding: 8px;
+}
+
+.header-button:hover {
+	background-color: #4524a6;
+}
+
+#content {
   width: 800px;
   margin: auto;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
 }
