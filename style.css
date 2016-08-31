@@ -5,7 +5,7 @@ body {
 
 #header-background {
 	height: 60px;
-	background-color: #5a30d9;
+	background-color: #5f36d9;
 	display: flex;
 	justify-content: center;
 }
@@ -32,10 +32,11 @@ body {
 .header-button {
 	font-weight: bold;
 	font-size: 16px;
+	background-color: #7757d9
 }
 
 .header-button:hover {
-	background-color: #4524a6;
+	background-color: #4e2db3;
 }
 
 #content {
