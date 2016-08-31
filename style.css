@@ -3,15 +3,27 @@ body {
 	background-color: #cccccc;
 }
 
-#header {
-	width: 800px;
+#header-background {
 	height: 60px;
-	line-height: 60px;
-	margin: auto;
 	background-color: #5a30d9;
-	color: #ffffff;
+}
+
+#header-container {
+	height: 60px;
+	width: 800px;
+	margin: auto;
+	position: relative;
+}
+
+#header-left {
+
+}
+
+.header-element {
+	line-height: 60px;
 	font-family: Helvetica, sans-serif;
 	display: inline-block;
+	position: absolute;
 }
 
 .header-button {
