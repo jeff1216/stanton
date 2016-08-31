@@ -1,6 +1,6 @@
-
 body {
 	background-color: #cccccc;
+	margin: 0;
 }
 
 #header-background {
@@ -37,10 +37,4 @@ body {
 
 .header-button:hover {
 	background-color: #4e2db3;
-}
-
-#content {
-  width: 800px;
-  margin: auto;
-  font-family: Helvetica, sans-serif;
 }
