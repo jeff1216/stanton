@@ -1,7 +1,9 @@
 body {
-	background-color: #cccccc;
+	background-color: #d4d4d4;
 	margin: 0;
 }
+
+/* Header style */
 
 #header-background {
 	height: 60px;
@@ -20,21 +22,35 @@ body {
 
 .header-element {
 	font-family: Helvetica, sans-serif;
-	padding: 12px;
 	color: #ffffff;
 }
 
 .header-static {
 	font-size: 24px;
 	margin-right: auto;
+	line-height: 60px;
+	padding: 0px 48px 0px 16px;
+	background-color: #4e2db3;
+	font-weight: bold;
 }
 
 .header-button {
 	font-weight: bold;
 	font-size: 16px;
-	background-color: #7757d9
+	background-color: #7757d9;
+	padding: 12px;
 }
 
 .header-button:hover {
 	background-color: #4e2db3;
+}
+
+/* Content style */
+
+#content-area {
+	height: 500px;
+	width: 800px;
+	background-color: #ffffff;
+	display: relative;
+	margin: auto;
 }
