@@ -12,17 +12,24 @@ body {
 #header-container {
 	height: 60px;
 	width: 800px;
-	margin: auto;
+	margin: 0 auto;
 	position: absolute;
 }
 
 .header-element {
 	font-family: Helvetica, sans-serif;
+	padding: 12px;
 	display: inline-block;
+	color: #ffffff;
+}
+
+.header-static {
+	font-size: 24px;
 }
 
 .header-button {
-	padding: 12px;
+	font-weight: bold;
+	font-size: 18px;
 }
 
 .header-button:hover {
