@@ -6,7 +6,8 @@ body {
 #header-background {
 	height: 60px;
 	background-color: #5a30d9;
-	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 #header-container {
@@ -14,17 +15,18 @@ body {
 	width: 800px;
 	display: flex;
 	align-items: center;
+	justify-content: flex-end;
 }
 
 .header-element {
 	font-family: Helvetica, sans-serif;
 	padding: 12px;
-	display: inline-block;
 	color: #ffffff;
 }
 
 .header-static {
 	font-size: 24px;
+	margin-right: auto;
 }
 
 .header-button {
