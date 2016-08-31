@@ -6,28 +6,23 @@ body {
 #header-background {
 	height: 60px;
 	background-color: #5a30d9;
+	position: relative;
 }
 
 #header-container {
 	height: 60px;
 	width: 800px;
 	margin: auto;
-	position: relative;
-}
-
-#header-left {
-
-}
-
-.header-element {
-	line-height: 60px;
-	font-family: Helvetica, sans-serif;
-	display: inline-block;
 	position: absolute;
 }
 
+.header-element {
+	font-family: Helvetica, sans-serif;
+	display: inline-block;
+}
+
 .header-button {
-	padding: 8px;
+	padding: 12px;
 }
 
 .header-button:hover {
