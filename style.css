@@ -38,7 +38,7 @@ body {
 	font-weight: bold;
 	font-size: 16px;
 	background-color: #7757d9;
-	padding: 12px;
+	padding: 8px 12px 8px 12px;
 }
 
 .header-button:hover {
@@ -53,4 +53,38 @@ body {
 	background-color: #ffffff;
 	display: relative;
 	margin: auto;
+}
+
+/* Footer style */
+
+#footer {
+	height: 50px;
+	width: 800px;
+	background-color: #555555;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: auto;
+}
+
+.footer-element {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #707070;
+	padding: 8px;
+}
+
+.footer-left {
+	margin-left: 8px;
+}
+
+.footer-right {
+	margin-left: auto;
+	margin-right: 8px;
+}
+
+.footer-element:hover {
+	background-color: #5f36d9;
 }
