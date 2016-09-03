@@ -5,14 +5,14 @@ body {
 
 /* Header style */
 
-#header-background {
+#header {
 	height: 60px;
 	background-color: #5f36d9;
 	display: flex;
 	justify-content: center;
 }
 
-#header-container {
+#h-container {
 	height: 60px;
 	width: 800px;
 	display: flex;
@@ -20,12 +20,12 @@ body {
 	justify-content: flex-end;
 }
 
-.header-element {
+.h-element {
 	font-family: Helvetica, sans-serif;
 	color: #ffffff;
 }
 
-.header-static {
+.h-static {
 	font-size: 24px;
 	margin-right: auto;
 	line-height: 60px;
@@ -34,20 +34,20 @@ body {
 	font-weight: bold;
 }
 
-.header-button {
+.h-button {
 	font-weight: bold;
 	font-size: 16px;
 	background-color: #7757d9;
 	padding: 8px 12px 8px 12px;
 }
 
-.header-button:hover {
+.h-button:hover {
 	background-color: #4e2db3;
 }
 
 /* Content style */
 
-#content-area {
+#content {
 	height: 500px;
 	width: 800px;
 	background-color: #ffffff;
@@ -60,31 +60,42 @@ body {
 #footer {
 	height: 50px;
 	width: 800px;
-	background-color: #555555;
+	background-color: #444444;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
 	margin: auto;
 }
 
-.footer-element {
+.f-element {
 	font-family: Helvetica, sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	color: #ffffff;
-	background-color: #707070;
 	padding: 8px;
 }
 
-.footer-left {
+.f-left {
 	margin-left: 8px;
 }
 
-.footer-right {
+.f-right {
 	margin-left: auto;
 	margin-right: 8px;
 }
 
-.footer-element:hover {
-	background-color: #5f36d9;
+.f-focus {
+	background-color: #7757d9;
+}
+
+.f-unfocus {
+	background-color: #666666;
+}
+
+.f-focus:hover {
+	background-color: #3d238c;
+}
+
+.f-unfocus:hover {
+	background-color: #333333;
 }
