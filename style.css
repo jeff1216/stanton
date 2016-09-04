@@ -1,3 +1,7 @@
+.off {
+	display: none;
+}
+
 body {
 	background-color: #d4d4d4;
 	margin: 0;
@@ -14,7 +18,7 @@ body {
 
 #h-container {
 	height: 60px;
-	width: 800px;
+	width: 1024px;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -48,81 +52,139 @@ body {
 /* Content style */
 
 #content {
-	height: 500px;
-	width: 800px;
+	height: 576px;
+	width: 1024px;
 	background-color: #ffffff;
 	margin: auto;
 	font-family: Helvetica, sans-serif;
 }
 
-.title > div:nth-child(1) {
-	font-size: 30px;
+#c-container {
+	height: 528px;
+	width: 976px;
+	position: relative;
+	top: 24px;
+	left: 24px;
+	/*
+	display: flex;
+	flex-direction: column;
+	*/
+}
+
+.title > img {
+	float: right;
+	margin-top: 24px;
+}
+
+.title > div:nth-child(2) {
+	font-size: 48px;
+	padding-top: 240px;
+}
+
+.title > div:nth-child(3) {
+	font-size: 22px;
+	padding-top: 8px;
+}
+
+.title > div:nth-child(4) {
+	font-size: 22px;
+	text-align: center;
+	margin: auto;
+	padding-top: 64px;
+}
+
+.title > div:nth-child(5) {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	width: 480px;
+	margin: auto;
+	padding-top: 24px;
+}
+
+.content-3-line {
+
+}
+
+.content-1-line-picture {
+
+}
+
+.content-1-line-no-picture {
+
+}
+
+.branch {
+
+}
+
+.quiz {
+
+}
+
+.timeline {
+
+}
+
+.end {
+
 }
 
 /* Footer style */
 
 #footer {
-	height: 50px;
-	width: 800px;
+	height: 48px;
+	width: 1024px;
 	background-color: #444444;
 	margin: auto;
 	position: relative;
-}
 
-#f-title {
-	height: 50px;
-	width: 800px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	font-family: Helvetica, sans-serif;
-	font-size: 20px;
 	font-weight: bold;
 	color: #ffffff;
 }
 
+#f-behind {
+	height: 48px;
+	width: 1024px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#f-title {
+	font-size: 20px;
+}
+
 #f-ui {
-	height: 50px;
-	width: 800px;
+	height: 48px;
+	width: 1024px;
 	display: flex;
 	align-items: center;
 	position: absolute;
 	top: 0px;
+	font-size: 16px;
 }
 
 .f-element {
-	font-family: Helvetica, sans-serif;
-	font-size: 16px;
-	font-weight: bold;
-	color: #ffffff;
 	padding: 8px;
 }
 
 .f-left {
 	margin-left: 8px;
+	background-color: #666666;
 }
 
 .f-right {
 	margin-right: 8px;
 	margin-left: auto;
+	background-color: #7757d9
 }
 
-.f-center {
-	margin: auto;
-}
-
-.f-focus {
-	background-color: #7757d9;
-}
-
-.f-unfocus {
-	background-color: #666666;
-}
-
-.f-focus:hover {
-	background-color: #3d238c;
-}
-
-.f-unfocus:hover {
+.f-left:hover {
 	background-color: #333333;
+}
+
+.f-right:hover {
+	background-color: #3d238c;
 }
