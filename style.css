@@ -51,8 +51,12 @@ body {
 	height: 500px;
 	width: 800px;
 	background-color: #ffffff;
-	display: relative;
 	margin: auto;
+	font-family: Helvetica, sans-serif;
+}
+
+.title > div:nth-child(1) {
+	font-size: 30px;
 }
 
 /* Footer style */
@@ -61,10 +65,29 @@ body {
 	height: 50px;
 	width: 800px;
 	background-color: #444444;
+	margin: auto;
+	position: relative;
+}
+
+#f-title {
+	height: 50px;
+	width: 800px;
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
-	margin: auto;
+	justify-content: center;
+	font-family: Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#f-ui {
+	height: 50px;
+	width: 800px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 0px;
 }
 
 .f-element {
@@ -80,8 +103,12 @@ body {
 }
 
 .f-right {
-	margin-left: auto;
 	margin-right: 8px;
+	margin-left: auto;
+}
+
+.f-center {
+	margin: auto;
 }
 
 .f-focus {
