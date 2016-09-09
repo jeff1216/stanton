@@ -65,10 +65,9 @@ body {
 	position: relative;
 	top: 24px;
 	left: 24px;
-	/*
 	display: flex;
 	flex-direction: column;
-	*/
+	justify-content: center;
 }
 
 .title > img {
@@ -99,11 +98,11 @@ body {
 	text-align: center;
 	width: 480px;
 	margin: auto;
-	padding-top: 24px;
+	padding-top: 80px;
 }
 
 .content-3-line {
-
+	align-self: center;
 }
 
 .content-1-line-picture {
@@ -111,7 +110,8 @@ body {
 }
 
 .content-1-line-no-picture {
-
+	font-size: 24px;
+	
 }
 
 .branch {

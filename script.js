@@ -1,7 +1,8 @@
 $(document).ready(function () {
-	var states = {
-		a01: $('#a01')
-	};
+	var states = [
+		$('#a01'),
+		$('#b01')
+	];
 
 	var progress = {
 		position: {
@@ -35,8 +36,13 @@ $(document).ready(function () {
 
 	};
 
-	var gotoPage = function (context, page) {
-
+	var gotoPage = function (oldPage, newPage) {
+		if (!(states[newPage] === undefined)) {
+			states[oldPage].addClass("off");
+			states[newPage].removeClass("off");
+		} else {
+			progress.position.page = oldPage
+		};
 	};
 
 	var toContent = function (number) {
@@ -58,4 +64,13 @@ $(document).ready(function () {
 	var delProgress = function () {
 
 	};
+
+
+	$("#f-next").click(function () {
+		gotoPage(progress.position.page, ++progress.position.page)
+	});
+
+	$("#f-back").click(function () {
+		gotoPage(progress.position.page, --progress.position.page)
+	});
 });
