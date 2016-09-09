@@ -72,12 +72,11 @@ body {
 
 .title > img {
 	float: right;
-	margin-top: 24px;
 }
 
 .title > div:nth-child(2) {
 	font-size: 48px;
-	padding-top: 240px;
+	padding-top: 148px;
 }
 
 .title > div:nth-child(3) {
@@ -87,9 +86,8 @@ body {
 
 .title > div:nth-child(4) {
 	font-size: 22px;
-	text-align: center;
-	margin: auto;
-	padding-top: 64px;
+	font-style: italic;
+	padding-top: 36px;
 }
 
 .title > div:nth-child(5) {
@@ -109,8 +107,9 @@ body {
 	margin: 48px 0px 48px 0px;
 }
 
-.content-1-line-picture {
-
+.section-start {
+	font-size: 48px;
+	text-align: center;
 }
 
 .branch {
