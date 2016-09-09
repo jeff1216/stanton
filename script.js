@@ -1,14 +1,32 @@
 $(document).ready(function () {
 	var states = [
 		$('#a01'),
-		$('#b01')
+		$('#b01'),
+		$('#b02'),
+		$('#b03'),
+		$('#b04'),
+		$('#b05'),
+		$('#b06'),
+		$('#b07'),
+		$('#b08'),
+		$('#b09')
 	];
 
+	var speakable = [
+		false,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true
+	]
+
 	var progress = {
-		position: {
-			context: "title",
-			page: 0
-		},
+		page: 0,
 		content: {
 			prologue: false,
 			ch1: false,
@@ -32,6 +50,8 @@ $(document).ready(function () {
 		activitiesComplete: 0
 	}
 
+	var slideChange = false;
+
 	var start = function () {
 
 	};
@@ -40,8 +60,9 @@ $(document).ready(function () {
 		if (!(states[newPage] === undefined)) {
 			states[oldPage].addClass("off");
 			states[newPage].removeClass("off");
+			slideChange = true;
 		} else {
-			progress.position.page = oldPage
+			progress.page = oldPage;
 		};
 	};
 
@@ -65,12 +86,24 @@ $(document).ready(function () {
 
 	};
 
+	var trySpeak = function () {
+		if (responsiveVoice.voiceSupport() && slideChange && speakable[progress.page]) {
+			var str = states[progress.page].text();
+			responsiveVoice.speak(str, "UK English Male");
+			slideChange = false;
+		}
+	}
+
 
 	$("#f-next").click(function () {
-		gotoPage(progress.position.page, ++progress.position.page)
+		gotoPage(progress.page, ++progress.page);
+		responsiveVoice.cancel();
+		trySpeak();
 	});
 
 	$("#f-back").click(function () {
-		gotoPage(progress.position.page, --progress.position.page)
+		gotoPage(progress.page, --progress.page);
+		responsiveVoice.cancel();
+		trySpeak();
 	});
 });

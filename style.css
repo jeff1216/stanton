@@ -101,17 +101,16 @@ body {
 	padding-top: 80px;
 }
 
-.content-3-line {
-	align-self: center;
+.content-text {
+	font-size: 24px;
+}
+
+.content-text > * {
+	margin: 48px 0px 48px 0px;
 }
 
 .content-1-line-picture {
 
-}
-
-.content-1-line-no-picture {
-	font-size: 24px;
-	
 }
 
 .branch {
@@ -183,8 +182,10 @@ body {
 
 .f-left:hover {
 	background-color: #333333;
+	cursor: pointer;
 }
 
 .f-right:hover {
 	background-color: #3d238c;
+	cursor: pointer;
 }
