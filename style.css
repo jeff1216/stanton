@@ -90,14 +90,20 @@ body {
 	padding-top: 36px;
 }
 
-.title > div:nth-child(5) {
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
-	width: 480px;
+.notice > * {
+	font-size: 18px;
+	padding-top: 36px;
 	margin: auto;
-	padding-top: 80px;
+	width: 480px;
+	text-align: center;
 }
+
+.notice > div:nth-child(1) {
+	font-size: 36px;
+	padding-top: 0px;
+	font-weight: bold;
+}
+
 
 .content-text {
 	font-size: 24px;
@@ -187,4 +193,22 @@ body {
 .f-right:hover {
 	background-color: #3d238c;
 	cursor: pointer;
+}
+
+
+.references > * {
+	font-size: 18px;
+	padding-top: 18px;
+	margin: auto;
+	width: 640px;
+
+	padding-left: 36px;
+	text-indent: -36px;
+}
+
+.references > div:nth-child(1) {
+	font-size: 36px;
+	padding-top: 0px;
+	font-weight: bold;
+	text-align: center;
 }

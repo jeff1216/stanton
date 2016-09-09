@@ -1,5 +1,6 @@
 $(document).ready(function () {
 	var states = [
+		$('#a00'),
 		$('#a01'),
 		$('#b00'),
 		$('#b01'),
@@ -10,10 +11,28 @@ $(document).ready(function () {
 		$('#b06'),
 		$('#b07'),
 		$('#b08'),
-		$('#b09')
+		$('#b09'),
+		$('#c00'),
+		$('#c01'),
+		$('#c02'),
+		$('#c03'),
+		$('#c04'),
+		$('#c05'),
+		$('#c06'),
+		$('#d00'),
+		$('#d01'),
+		$('#d02'),
+		$('#d03'),
+		$('#d04'),
+		$('#d05'),
+		$('#e00'),
+		$('#e01'),
+		$('#f00'),
+		$('#z00')
 	];
 
 	var speakable = [
+		false,
 		false,
 		true,
 		true,
@@ -24,21 +43,56 @@ $(document).ready(function () {
 		true,
 		true,
 		true,
-		true
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		true,
+		false
 	]
 
 	var dispFooter = [
-		[false, false, false, true, false, false],
-		[false, false, true, false, false, true],
-		[false, true, true, false, false, true],
-		[false, true, true, false, false, true],
-		[false, true, true, false, false, true],
-		[false, true, true, false, false, true],
-		[false, true, true, false, false, true],
-		[false, true, true, false, false, true],
-		[false, true, true, false, false, true],
-		[false, true, true, false, false, true],
-		[false, true, true, false, false, true]
+		[false, false, false, true, false, false, false],
+		[false, false, false, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, true, true, false, false, true, false],
+		[false, false, false, false, false, false, true]
 	]
 	var progress = {
 		page: 0,
@@ -108,6 +162,11 @@ $(document).ready(function () {
 		} else {
 			$("#f-next").addClass("off");
 		}
+		if (dispFooter[page][6]) {
+			$("#f-home").removeClass("off");
+		} else {
+			$("#f-home").addClass("off");
+		}
 	}
 
 	var trySpeak = function () {
@@ -143,4 +202,17 @@ $(document).ready(function () {
 		timeToSpeak = true;
 		trySpeak();
 	});
+
+	$("#f-home").click(function () {
+		gotoPage(progress.page, 0);
+		progress.page = 0;
+		updateFooter(progress.page);
+	});
+
+	$("#h-references").click(function () {
+		gotoPage(progress.page, states.length - 1);
+		responsiveVoice.cancel()
+		progress.page = states.length - 1;
+		updateFooter(progress.page);
+	})
 });
